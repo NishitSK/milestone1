@@ -1,0 +1,147 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+
+.home {
+  position: relative;
+  height: 94vh;
+  width: 100%;
+  background-image: url('../assets/photo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border: 15px solid white;
+  border-bottom: 50px solid #dce4f0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.home-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(197, 205, 212, 0.85);
+  padding: 40px 80px;
+  border-radius: 0px 0px 50px 50px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(50%);
+  opacity: 0;
+  animation: slideUp 1s forwards, fadeIn 1.5s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-text {
+  font-size: 80px;
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: black;
+  
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.sub-text {
+  font-size: 40px;
+  color: black;
+  margin-top: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+
+.home:hover .home-content {
+  animation: slideUp 1s forwards, fadeIn 1.5s forwards, hoverEffect 0.3s forwards;
+}
+
+@keyframes hoverEffect {
+  0% {
+    background-color: rgba(197, 205, 212, 0.85);
+  }
+  100% {
+    background-color: rgba(197, 205, 212, 0.95);
+  }
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+
+.home {
+  position: relative;
+  height: 94vh;
+  width: 100%;
+  background-image: url('../assets/photo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border: 15px solid white;
+  border-bottom: 50px solid #dce4f0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.home-content {
+  position: absolute;
+  bottom: 0px; /* Adjust for top position */
+  left: 0px; /* Adjust for left position */
+  background-color: rgba(197, 205, 212, 0.85);
+  padding: 40px 60px;
+  border-radius: 8px;
+  text-align: left; /* Align text to the left */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text {
+  font-size: 80px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sub-text {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  margin-top: 15px;
+}
+
+
+
+
+
+
