@@ -1,9 +1,9 @@
-
 import React from 'react';
-import './Menu.css';
+import './Menu.css'
+import { Link } from 'react-router-dom';
 import brushetta from '../assets/brushetta.jpg';
 import stuffedMushrooms from '../assets/stmush.jpg';
-import garlicBread from '../assets/garlicbread.jpg';
+import garlicBread from '../assets/garlic-bread.jpg';
 import grilledSalmon from '../assets/grilled-salmon.jpg';
 import chickenAlfredo from '../assets/chicken-alfredo.jpg';
 import vegetarianLasagna from '../assets/vegetarian-lasagna.jpg';
@@ -19,33 +19,33 @@ const Menu = () => {
     {
       category: 'Appetizers',
       items: [
-        { name: 'Bruschetta', image: brushetta },
-        { name: 'Stuffed Mushrooms', image: stuffedMushrooms },
-        { name: 'Garlic Bread', image: garlicBread },
+        { name: 'Bruschetta', image: brushetta, link: 'bruschetta' },
+        { name: 'Stuffed Mushrooms', image: stuffedMushrooms, link: 'stuffed-mushrooms' },
+        { name: 'Garlic Bread', image: garlicBread, link: 'garlic-bread' },
       ],
     },
     {
       category: 'Entrees',
       items: [
-        { name: 'Grilled Salmon', image: grilledSalmon },
-        { name: 'Chicken Alfredo', image: chickenAlfredo },
-        { name: 'Vegetarian Lasagna', image: vegetarianLasagna },
+        { name: 'Grilled Salmon', image: grilledSalmon, link: 'grilled-salmon' },
+        { name: 'Chicken Alfredo', image: chickenAlfredo, link: 'chicken-alfredo' },
+        { name: 'Vegetarian Lasagna', image: vegetarianLasagna, link: 'vegetarian-lasagna' },
       ],
     },
     {
       category: 'Desserts',
       items: [
-        { name: 'Tiramisu', image: tiramisu },
-        { name: 'Cheesecake', image: cheesecake },
-        { name: 'Chocolate Mousse', image: chocolateMousse },
+        { name: 'Tiramisu', image: tiramisu, link: 'tiramisu' },
+        { name: 'Cheesecake', image: cheesecake, link: 'cheesecake' },
+        { name: 'Chocolate Mousse', image: chocolateMousse, link: 'chocolate-mousse' },
       ],
     },
     {
       category: 'Drinks',
       items: [
-        { name: 'Red Wine', image: redWine },
-        { name: 'Mojito', image: mojito },
-        { name: 'Iced Tea', image: icedTea },
+        { name: 'Red Wine', image: redWine, link: 'red-wine' },
+        { name: 'Mojito', image: mojito, link: 'mojito' },
+        { name: 'Iced Tea', image: icedTea, link: 'iced-tea' },
       ],
     },
   ];
@@ -65,7 +65,9 @@ const Menu = () => {
                   className="menu-card-image"
                 />
                 <div className="menu-card-content">
-                  <h4 className="menu-item-name">{item.name}</h4>
+                  <Link to={`/dish/${item.link}`} className="menu-item-name">
+                    {item.name}
+                  </Link>
                 </div>
               </div>
             ))}
@@ -77,6 +79,7 @@ const Menu = () => {
 };
 
 export default Menu;
+
 
 
 
